@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button id="click">Click Me</button>
+    <script>
+      $(document).ready(function () {
+        $("#click").click(function (event) {
+          event.preventDefault();
+          $("#demo").text("Sai teja");
+        });
+      });
+    </script>
+  </body>
+</html>
